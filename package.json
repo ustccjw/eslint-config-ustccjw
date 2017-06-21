@@ -1,0 +1,33 @@
+{
+  "name": "eslint-config-ustccjw",
+  "version": "1.0.0",
+  "description": "ustccjw's eslint config",
+  "keywords": [
+    "eslint config",
+    "ustccjw"
+  ],
+  "homepage": "https://github.com/ustccjw/eslint-config-ustccjw#readme",
+  "bugs": {
+    "url": "https://github.com/ustccjw/eslint-config-ustccjw/issues"
+  },
+  "license": "MIT",
+  "author": "ustccjw",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ustccjw/eslint-config-ustccjw.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "babel-eslint": "7",
+    "eslint-config-airbnb": "14",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-jsx-a11y": "4",
+    "eslint-plugin-react": "6"
+  },
+  "peerDependencies": {
+    "eslint": "3"
+  }
+}
