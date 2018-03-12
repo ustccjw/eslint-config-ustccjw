@@ -1,33 +1,43 @@
 {
   "name": "eslint-config-ustccjw",
-  "version": "1.0.0",
-  "description": "ustccjw's eslint config",
+  "version": "1.0.1",
+  "description": "ustccjw eslint config",
   "keywords": [
     "eslint config",
     "ustccjw"
   ],
-  "homepage": "https://github.com/ustccjw/eslint-config-ustccjw#readme",
-  "bugs": {
-    "url": "https://github.com/ustccjw/eslint-config-ustccjw/issues"
-  },
   "license": "MIT",
   "author": "ustccjw",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ustccjw/eslint-config-ustccjw.git"
+    "url": "https://github.com/ustccjw/eslint-config-ustccjw"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commitmsg": "commitlint -e"
   },
   "dependencies": {
-    "babel-eslint": "7",
-    "eslint-config-airbnb": "14",
+    "babel-eslint": "8",
+    "eslint-config-airbnb": "16",
     "eslint-plugin-import": "2",
-    "eslint-plugin-jsx-a11y": "4",
-    "eslint-plugin-react": "6"
+    "eslint-plugin-jsx-a11y": "6",
+    "eslint-plugin-react": "7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "6",
+    "@commitlint/config-angular": "6",
+    "eslint": "4",
+    "husky": "0.14"
   },
   "peerDependencies": {
-    "eslint": "3"
+    "eslint": "4"
+  },
+  "engines": {
+    "node": ">= 9.0.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-angular"
+    ]
   }
 }
